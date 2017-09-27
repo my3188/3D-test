@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>图片循环旋转</title>
+<style>
+
+
+
+@keyframes rotation{
+	0%{transform: rotate(0deg);}
+	 25%{transform: rotate(180deg);}
+	/*35%{transform: rotate(200deg);}
+	60%{transform: rotate(300deg);} */
+	100%{transform: rotate(360deg);}
+}
+
+.mayue{
+	animation: rotation 2s linear infinite;
+}
+.mayue{
+	width: 110px;
+	height: 110px;
+	background-image: url('loading2x.png');
+	background-size: contain;
+}
+
+</style>
+</head>
+<body>
+<div class="mayue"></div>
+</body>
+</html>
